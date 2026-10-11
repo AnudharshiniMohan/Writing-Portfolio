@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Anudharshini M | Copywriter &amp; Content Writer</title>
+  <meta name="description" content="Portfolio of Anudharshini M, an aspiring copywriter and content writer. Advertising analysis, brand copy, sales pitches, a TV commercial script and personal writing.">
+  <meta name="theme-color" content="#f7f2e8">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23a44e31'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='56' text-anchor='middle' fill='%23f7f2e8'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+/* ==========================================================================
+   Styles for the writing portfolio.
+   Change colours in the :root block below to re-theme the whole site.
+   ========================================================================== */
+
+:root {
+  --ivory: #f7f2e8;
+  --paper: #fffdf8;
+  --beige: #ece2d0;
+  --beige-deep: #d9ccb6;
+  --charcoal: #2b2b2b;
+  --grey: #5f5a52;           /* body secondary text, passes AA on ivory */
+  --terracotta: #a44e31;     /* passes AA on ivory and paper */
+  --terracotta-dark: #8a3f26;
+
+  --serif: "Cormorant Garamond", "Playfair Display", Georgia, "Times New Roman", serif;
+  --sans: "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --hand: "Caveat", "Segoe Print", cursive;
+
+  --radius: 8px;
+  --shadow: 0 1px 2px rgba(43, 43, 43, .05), 0 8px 24px rgba(43, 43, 43, .06);
+  --wrap: 1120px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+body {
+  margin: 0;
+  background: var(--ivory);
+  color: var(--charcoal);
+  font-family: var(--sans);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  /* faint paper grain */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .3 0 0 0 0 .22 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+body.no-scroll { overflow: hidden; }
+img, svg { max-width: 100%; height: auto; display: block; }
+a { color: var(--terracotta); text-underline-offset: 3px; }
+a:hover { color: var(--terracotta-dark); }
+:focus-visible { outline: 3px solid var(--terracotta); outline-offset: 3px; border-radius: 4px; }
+
+.wrap { width: min(100% - 2.5rem, var(--wrap)); margin-inline: auto; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.skip-link { position: absolute; left: 1rem; top: -4rem; background: var(--charcoal); color: #fff; padding: .6rem 1rem; border-radius: 8px; z-index: 100; }
+.skip-link:focus { top: 1rem; }
+
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.12; margin: 0; letter-spacing: -.005em; }
+h2 { font-size: clamp(2rem, 4vw, 2.9rem); }
+h3 { font-size: 1.5rem; }
+p { margin: 0 0 1.1em; }
+
+/* ---------- header ---------- */
+.site-header {
+  position: sticky; top: 0; z-index: 20;
+  background: rgba(247, 242, 232, .92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--beige-deep);
+}
+.header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 64px; gap: 1rem; }
+.brand { font-family: var(--serif); font-size: 1.45rem; font-weight: 700; color: var(--charcoal); text-decoration: none; }
+.site-nav { display: flex; gap: 1.6rem; align-items: center; }
+.site-nav a { color: var(--charcoal); text-decoration: none; font-size: .98rem; padding: .25rem 0; border-bottom: 2px solid transparent; }
+.site-nav a:hover { border-bottom-color: var(--terracotta); }
+.site-nav .nav-cta { background: var(--charcoal); color: var(--ivory); padding: .45rem 1.1rem; border-radius: 999px; border: 0; }
+.site-nav .nav-cta:hover { background: var(--terracotta); color: #fff; }
+.nav-toggle { display: none; font: inherit; background: none; border: 1px solid var(--charcoal); border-radius: 999px; padding: .35rem 1rem; color: var(--charcoal); cursor: pointer; }
+
+/* ---------- buttons ---------- */
+.btn {
+  display: inline-block; font: 600 1rem var(--sans); text-decoration: none; cursor: pointer;
+  padding: .85rem 1.6rem; border-radius: 999px; border: 2px solid transparent;
+  transition: background-color .2s, color .2s, border-color .2s, transform .2s;
+}
+.btn-primary { background: var(--terracotta); color: #fff; }
+.btn-primary:hover { background: var(--terracotta-dark); color: #fff; }
+.btn-ghost { border-color: var(--charcoal); color: var(--charcoal); background: transparent; }
+.btn-ghost:hover { background: var(--charcoal); color: var(--ivory); }
+.btn-row { display: flex; flex-wrap: wrap; gap: .9rem; margin-top: 1.8rem; }
+
+/* ---------- hero ---------- */
+.hero { padding: clamp(3rem, 8vw, 6.5rem) 0 clamp(3rem, 7vw, 5rem); }
+.hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
+.hero h1 { font-size: clamp(1.9rem, 4.1vw, 3.8rem); font-weight: 700; line-height: .98; letter-spacing: .01em; }
+.role { font-family: var(--serif); font-style: italic; font-size: clamp(1.4rem, 2.6vw, 1.9rem); color: var(--terracotta); margin: .7rem 0 1.6rem; }
+.lead { max-width: 34em; font-size: 1.15rem; color: var(--grey); }
+.hero-visual { margin: 0; position: relative; }
+.hero-visual svg { filter: drop-shadow(0 18px 24px rgba(43, 43, 43, .12)); }
+.hand-note { font-family: var(--hand); font-size: 1.4rem; color: var(--terracotta); text-align: center; margin-top: .4rem; transform: rotate(-2deg); }
+
+/* single orchestrated entrance: the hero only */
+@keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+.hero-copy > * { animation: rise .7s ease both; }
+.hero-copy > *:nth-child(2) { animation-delay: .08s; }
+.hero-copy > *:nth-child(3) { animation-delay: .16s; }
+.hero-copy > *:nth-child(4) { animation-delay: .24s; }
+.hero-visual { animation: rise .9s .2s ease both; }
+
+/* ---------- sections ---------- */
+.section { padding: clamp(3.5rem, 8vw, 6rem) 0; }
+.section-tint { background: var(--beige); }
+.section-head { margin-bottom: 2rem; max-width: 42rem; }
+.section-sub { color: var(--grey); margin: .7rem 0 0; }
+
+/* about */
+.about-grid { display: grid; grid-template-columns: 1.3fr .7fr; gap: clamp(2rem, 6vw, 5rem); align-items: start; }
+.about-grid h2 { margin-bottom: 1.2rem; }
+.about-grid p { max-width: 38em; }
+.pull-quote {
+  margin: 0; position: relative; padding: 2.6rem 1.8rem 1.8rem;
+  background: var(--paper); border-radius: var(--radius); box-shadow: var(--shadow);
+  border-left: 4px solid var(--terracotta);
+}
+.pull-quote::before { content: "\201C"; position: absolute; top: -.1rem; left: 1.2rem; font: 700 5.5rem/1 var(--serif); color: var(--terracotta); opacity: .35; }
+.pull-quote p { margin: 0; font-family: var(--serif); font-size: clamp(1.5rem, 2.6vw, 2rem); font-weight: 500; font-style: italic; line-height: 1.3; }
+
+/* filters */
+.filters { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 2rem; }
+.filter {
+  font: 500 .95rem var(--sans); cursor: pointer; padding: .5rem 1.1rem; border-radius: 999px;
+  background: var(--paper); color: var(--charcoal); border: 1px solid var(--beige-deep);
+  transition: background-color .2s, color .2s, border-color .2s;
+}
+.filter:hover { border-color: var(--charcoal); }
+.filter[aria-pressed="true"] { background: var(--charcoal); color: var(--ivory); border-color: var(--charcoal); }
+
+/* cards */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 1.4rem; }
+.card {
+  display: flex; flex-direction: column; align-items: flex-start;
+  background: var(--paper); border: 1px solid var(--beige-deep); border-radius: var(--radius);
+  padding: 1.7rem; box-shadow: var(--shadow);
+  transition: transform .25s, box-shadow .25s;
+}
+.card:hover { transform: translateY(-3px); box-shadow: 0 2px 4px rgba(43,43,43,.06), 0 14px 30px rgba(43,43,43,.1); }
+.card h3 { font-size: 1.65rem; margin-bottom: .6rem; }
+.card-cat { font-size: .88rem; color: var(--terracotta); font-weight: 600; margin: 0 0 .5rem; }
+.card-desc { color: var(--grey); font-size: 1rem; margin-bottom: 1.4rem; }
+.btn-card { margin-top: auto; background: transparent; color: var(--charcoal); border-color: var(--charcoal); padding: .6rem 1.3rem; font-size: .95rem; }
+.btn-card:hover { background: var(--charcoal); color: var(--ivory); }
+.tag-speculative {
+  display: inline-block; font-size: .82rem; color: var(--charcoal); background: var(--beige);
+  border: 1px dashed var(--terracotta); border-radius: 6px; padding: .15rem .6rem; margin: 0 0 .9rem;
+}
+.personal-head { margin-top: 4rem; }
+.personal-head h3 { font-size: 2rem; }
+.card-reflective { background: var(--ivory); }
+.empty { color: var(--grey); font-style: italic; }
+
+/* process */
+.steps { list-style: none; counter-reset: step; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.4rem; }
+.steps li { counter-increment: step; padding: 1.4rem 0 0; border-top: 2px solid var(--charcoal); }
+.steps li::before { content: counter(step); font: italic 600 1.2rem var(--serif); color: var(--terracotta); }
+.steps h3 { margin: .2rem 0 .5rem; }
+.steps p { color: var(--grey); margin: 0; }
+
+/* skills */
+.chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .7rem; }
+.chips li { background: var(--paper); border: 1px solid var(--beige-deep); border-radius: 999px; padding: .5rem 1.2rem; font-weight: 500; }
+
+/* background */
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: start; }
+.two-col h2 { font-size: clamp(1.8rem, 3vw, 2.3rem); margin-bottom: 1.2rem; }
+.plain-card { background: var(--paper); border: 1px solid var(--beige-deep); border-radius: var(--radius); padding: 1.8rem; box-shadow: var(--shadow); }
+.plain-card h3 { font-size: 1.45rem; margin-bottom: .5rem; }
+.plain-card h3.sub { margin-top: 1.6rem; }
+.plain-card .meta { margin: 0; color: var(--grey); }
+.plain-card .note { margin: 1.1rem 0 0; font-style: italic; color: var(--grey); border-left: 3px solid var(--terracotta); padding-left: 1rem; }
+.plain-card ul { margin: .6rem 0 0; padding-left: 1.2rem; color: var(--grey); }
+.plain-card li { margin-bottom: .4rem; }
+
+/* contact */
+.contact { background: var(--charcoal); color: var(--ivory); }
+.contact h2 { color: var(--ivory); margin-bottom: 1.2rem; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 6vw, 5rem); align-items: start; }
+.lead-sm { color: #d9d2c4; max-width: 30em; }
+.contact .btn-primary { background: var(--ivory); color: var(--charcoal); }
+.contact .btn-primary:hover { background: #fff; color: var(--terracotta-dark); }
+.contact a { color: #f0b9a3; }
+.contact a:hover { color: #fff; }
+.contact :focus-visible { outline-color: #f0b9a3; }
+.contact-list { margin: 0; }
+.contact-list div { padding: .9rem 0; border-bottom: 1px solid rgba(247, 242, 232, .18); display: grid; grid-template-columns: 6.5rem 1fr; gap: 1rem; }
+.contact-list dt { color: #bdb5a5; }
+.contact-list dd { margin: 0; overflow-wrap: anywhere; }
+
+.site-footer { background: #222; color: #bdb5a5; padding: 1.6rem 0; font-size: .9rem; }
+.site-footer p { margin: 0; }
+
+/* ---------- reading dialog ---------- */
+dialog#viewer {
+  width: min(100% - 1.5rem, 860px); max-height: min(92vh, 1000px); padding: 0; border: 0;
+  border-radius: 12px; background: var(--paper); color: var(--charcoal);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, .35); overflow: hidden;
+}
+dialog#viewer[open] { display: flex; flex-direction: column; animation: rise .3s ease; }
+dialog#viewer::backdrop { background: rgba(43, 43, 43, .6); }
+.viewer-bar { display: flex; justify-content: flex-end; padding: .8rem 1rem 0; background: var(--paper); }
+.viewer-close { font: 600 .95rem var(--sans); cursor: pointer; background: var(--beige); border: 0; border-radius: 999px; padding: .5rem 1.2rem; color: var(--charcoal); }
+.viewer-close:hover { background: var(--charcoal); color: var(--ivory); }
+.viewer-body { overflow-y: auto; padding: 1rem clamp(1.4rem, 5vw, 4rem) clamp(2rem, 5vw, 3.5rem); }
+.viewer-body h2 { font-size: clamp(2rem, 4.5vw, 3rem); margin-bottom: 1rem; }
+.viewer-desc { color: var(--grey); font-style: italic; }
+
+.prose { max-width: 36em; margin-top: 1.6rem; }
+.prose p { font-family: var(--serif); font-size: 1.35rem; line-height: 1.75; margin-bottom: 1.4em; }
+.prose-verse p { font-size: 1.45rem; }
+
+/* brand cards */
+.brand-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.2rem; margin-top: 1.6rem; }
+.brand-card { border-radius: 16px; padding: 1.6rem; display: flex; flex-direction: column; gap: 1rem; border: 1px solid transparent; }
+.brand-card h3 { font-size: 1.1rem; }
+.brand-lines { margin: 0; line-height: 1.55; font-size: 1.15rem; }
+.brand-maggi { background: #fbe9a8; color: #4a2d12; }
+.brand-maggi h3 { font-family: var(--sans); font-weight: 700; }
+.brand-maggi .brand-lines { font-family: var(--sans); font-weight: 500; }
+.brand-pizza { background: #2b2b2b; color: #f7f2e8; }
+.brand-pizza h3 { font-family: var(--sans); font-weight: 700; color: #f2a58a; }
+.brand-pizza .brand-lines { font-family: var(--sans); font-weight: 600; font-size: 1.2rem; }
+.brand-tiffany { background: #e3efec; color: #1f3a36; border-color: #bcd6d1; }
+.brand-tiffany h3 { font-family: var(--serif); font-style: italic; font-size: 1.4rem; }
+.brand-tiffany .brand-lines { font-family: var(--serif); font-size: 1.4rem; font-style: italic; }
+
+/* storyboard */
+.storyboard { list-style: none; margin: 1.6rem 0 0; padding: 0; display: grid; gap: 1rem; }
+.scene { background: var(--ivory); border: 1px solid var(--beige-deep); border-left: 4px solid var(--terracotta); border-radius: 10px; padding: 1.1rem 1.3rem; }
+.scene-head { display: flex; justify-content: space-between; gap: 1rem; font-size: .9rem; color: var(--grey); }
+.scene-num { font-weight: 600; color: var(--terracotta); }
+.scene h3 { font-size: 1.35rem; margin: .2rem 0 .6rem; }
+.beat-action { font-size: .98rem; color: var(--grey); font-style: italic; margin: 0 0 .5rem; }
+.beat-line { margin: 0 0 .5rem; font-family: var(--serif); font-size: 1.25rem; }
+.who { font-family: var(--sans); font-size: .85rem; font-weight: 600; color: var(--charcoal); }
+.scene-final { background: var(--charcoal); color: var(--ivory); border-color: var(--charcoal); border-left-color: var(--terracotta); }
+.scene-final .scene-head, .scene-final .beat-action { color: #cfc7b7; }
+.scene-final .scene-num { color: #f0b9a3; }
+.tagline { font: 700 clamp(1.5rem, 3.4vw, 2.1rem)/1.2 var(--serif); margin: .8rem 0 .2rem; color: #fff; }
+.timing-note { margin-top: 1.4rem; font-size: .95rem; color: var(--grey); }
+
+/* ad copy and email slots */
+.slots { display: grid; gap: 1rem; margin-top: 1.6rem; max-width: 40rem; }
+.slot { border: 1px solid var(--beige-deep); border-radius: 12px; padding: 1.1rem 1.3rem; background: var(--ivory); }
+.slot h3 { font-size: 1.15rem; margin-bottom: .4rem; }
+.slot p { margin: 0; font-family: var(--serif); font-size: 1.3rem; }
+.slot-empty { border-style: dashed; border-color: var(--terracotta); background: transparent; }
+.slot-hint { font-family: var(--sans) !important; font-size: .98rem !important; color: var(--grey); font-style: italic; }
+.email-subject { background: var(--charcoal); color: var(--ivory); border-radius: 12px; padding: 1.1rem 1.3rem; }
+.email-subject .who { color: #f0b9a3; }
+.email-subject p { margin: .3rem 0 0; font: 600 1.45rem/1.3 var(--serif); }
+.food-visual { background: #2b2b2b; border-radius: 14px; padding: 1rem; }
+.food-visual svg { max-width: 360px; margin-inline: auto; }
+
+/* ---------- responsive ---------- */
+@media (max-width: 860px) {
+  .hero-grid, .about-grid, .two-col, .contact-grid { grid-template-columns: 1fr; }
+  .hero-visual { max-width: 420px; margin-inline: auto; }
+  .nav-toggle { display: inline-block; }
+  .site-nav {
+    display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; align-items: flex-start;
+    gap: .2rem; padding: 1rem 1.25rem 1.4rem; background: var(--ivory); border-bottom: 1px solid var(--beige-deep);
+  }
+  .site-nav.open { display: flex; }
+  .site-nav a { padding: .6rem 0; width: 100%; }
+  .site-nav .nav-cta { width: auto; margin-top: .4rem; }
+}
+@media (max-width: 520px) {
+  .contact-list div { grid-template-columns: 1fr; gap: 0; }
+  dialog#viewer { width: 100%; max-height: 100vh; height: 100vh; border-radius: 0; }
+}
+
+/* ---------- respect reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .card:hover { transform: none; }
+}
+
+/* ---------- v2 additions ---------- */
+.card { padding: 0 0 1.5rem; overflow: hidden; }
+.card > *:not(.card-motif) { margin-left: 1.5rem; margin-right: 1.5rem; }
+.card-motif {
+  align-self: stretch; margin: 0 0 1.2rem; padding: 1.5rem 1.5rem 1.3rem; min-height: 5.6rem;
+  font: italic 600 clamp(1.4rem, 2.4vw, 1.75rem)/1.15 var(--serif); display: flex; align-items: flex-end;
+  background: var(--beige); color: var(--charcoal);
+}
+.tone-sand .card-motif { background: #e6d6b8; }
+.tone-charcoal .card-motif { background: var(--charcoal); color: var(--ivory); }
+.tone-terracotta .card-motif { background: var(--terracotta); color: #fff; }
+.card-cat { margin-top: 0; }
+
+/* personal writing: quieter, literary */
+.personal { background: var(--ivory); border-top: 1px solid var(--beige-deep); }
+.cards-personal { grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 0; border-top: 1px solid var(--charcoal); }
+.cards-personal .card {
+  background: transparent; box-shadow: none; border: 0; border-bottom: 1px solid var(--beige-deep);
+  border-radius: 0; padding: 1.6rem 1.4rem 1.6rem 0; transform: none;
+}
+.cards-personal .card > * { margin-left: 0; margin-right: 0; }
+.cards-personal .card h3 { font-style: italic; font-weight: 500; font-size: 1.7rem; }
+.cards-personal .card:hover { box-shadow: none; }
+.cards-personal .btn-card { border: 0; padding: .4rem 0; border-bottom: 2px solid var(--terracotta); border-radius: 0; background: none; }
+.cards-personal .btn-card:hover { background: none; color: var(--terracotta); }
+
+/* project detail */
+.brief { margin: 1.4rem 0 1.8rem; padding: 1.1rem 1.3rem; background: var(--ivory); border-left: 4px solid var(--beige-deep); }
+.brief h3, .response-label { font: 600 1rem var(--sans); letter-spacing: 0; color: var(--grey); margin: 0 0 .3rem; }
+.brief p { margin: 0; font-family: var(--serif); font-size: 1.3rem; line-height: 1.5; }
+.brief .brief-note { font: .95rem var(--sans); color: var(--grey); margin-top: .5rem; }
+.response-label { margin-top: 1.6rem; color: var(--terracotta); }
+.highlight { font: italic 600 clamp(1.7rem, 4vw, 2.5rem)/1.2 var(--serif); color: var(--terracotta); margin: 1.4rem 0; max-width: 18em; }
+.footnote { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--beige-deep); font-size: .92rem; color: var(--grey); }
+.viewer-quiet { background: var(--ivory); }
+.viewer-quiet h2 { font-weight: 500; font-style: italic; }
+.viewer-quiet .viewer-desc { font: 1.3rem/1.6 var(--serif); max-width: 32em; }
+.brand-card, .scene, .slot, .email-subject, .plain-card, .pull-quote { border-radius: 6px; }
+.filter, .chips li { border-radius: 4px; }
+.btn { border-radius: 4px; }
+.site-nav .nav-cta { border-radius: 4px; }
+.nav-toggle, .viewer-close { border-radius: 4px; }
+.hero-copy, .hero-visual { min-width: 0; }
+
+.ornament { margin: 1.4rem 0 0; padding: 1rem; background: var(--beige); border-radius: 6px; }
+.ornament svg { max-width: 360px; margin-inline: auto; }
+
+/* published-page safe areas */
+:root { box-sizing: border-box; padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+html { scroll-padding-top: calc(76px + env(safe-area-inset-top, 0px)); }
+.site-header { top: env(safe-area-inset-top, 0px); }
+
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Anudharshini M, home">Anudharshini M</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#work">Selected Work</a>
+        <a href="#personal">Personal Writing</a>
+        <a href="#process">Approach</a>
+        <a href="#education">Education</a>
+        <a href="#contact" class="nav-cta">Get in Touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1>ANUDHARSHINI M</h1>
+          <p class="role">Copywriter | Content Writer</p>
+          <p class="lead">I write to make people feel something, remember something, or see something differently. From personal reflections to brand storytelling, I enjoy finding the words that connect ideas with people.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="#work">Explore My Work</a>
+            <a class="btn btn-ghost" href="#contact">Get in Touch</a>
+          </div>
+        </div>
+
+        <figure class="hero-visual">
+          <svg viewBox="0 0 460 420" role="img" aria-labelledby="deskTitle deskDesc">
+            <title id="deskTitle">A writer's desk</title>
+            <desc id="deskDesc">An open notebook with handwritten words, a sharpened pencil and a loose sheet of paper with a cup beside it.</desc>
+            <!-- desk shadow -->
+            <ellipse cx="230" cy="388" rx="190" ry="14" fill="#2b2b2b" opacity=".08"/>
+            <!-- loose sheet -->
+            <g transform="rotate(7 350 150)">
+              <rect x="285" y="40" width="150" height="190" rx="4" fill="#fffdf8" stroke="#d9ccb6"/>
+              <text x="303" y="72" font-family="Caveat, cursive" font-size="22" fill="#a44e31">first draft</text>
+              <path d="M303 92h112M303 110h96" stroke="#d9ccb6" stroke-width="2" stroke-linecap="round"/>
+            </g>
+            <!-- notebook -->
+            <g transform="rotate(-3 210 250)">
+              <rect x="40" y="130" width="300" height="230" rx="10" fill="#e4d6bf"/>
+              <rect x="50" y="122" width="280" height="230" rx="8" fill="#fffdf8" stroke="#d9ccb6"/>
+              <path d="M190 122v230" stroke="#d9ccb6"/>
+              <g stroke="#e7dcc8" stroke-width="2" stroke-linecap="round">
+                <path d="M68 170h106M68 196h106M68 222h106M68 248h106M68 274h106M68 300h106"/>
+                <path d="M206 170h106M206 196h106M206 222h106M206 248h106"/>
+              </g>
+              <text x="68" y="164" font-family="Caveat, cursive" font-size="24" fill="#2b2b2b">look closely</text>
+              <text x="68" y="216" font-family="Caveat, cursive" font-size="22" fill="#6b645a">what do people</text>
+              <text x="68" y="242" font-family="Caveat, cursive" font-size="22" fill="#6b645a">actually feel?</text>
+              <text x="206" y="164" font-family="Caveat, cursive" font-size="24" fill="#a44e31">words that stay</text>
+              <path d="M206 172c30 6 62 6 92 0" stroke="#a44e31" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <path d="M300 300c4-10 14-12 18-4s-6 16-18 20c-12-4-22-12-18-20s14-6 18 4z" fill="#a44e31" opacity=".18"/>
+            </g>
+            <!-- pencil -->
+            <g transform="rotate(-32 380 330)">
+              <rect x="270" y="318" width="170" height="20" rx="3" fill="#c9885f"/>
+              <rect x="270" y="318" width="170" height="6" fill="#a44e31" opacity=".35"/>
+              <rect x="428" y="318" width="22" height="20" rx="3" fill="#2b2b2b"/>
+              <path d="M270 318l-34 10 34 10z" fill="#ecd9b8"/>
+              <path d="M236 328l12-3.5v7z" fill="#2b2b2b"/>
+            </g>
+            <!-- cup -->
+            <g>
+              <path d="M360 292h62v44a28 28 0 0 1-28 28h-6a28 28 0 0 1-28-28z" fill="#f2e9d8" stroke="#d9ccb6"/>
+              <path d="M422 304h8a14 14 0 0 1 0 28h-8" fill="none" stroke="#d9ccb6" stroke-width="5"/>
+              <path d="M380 282c-6-10 6-14 0-24M398 282c-6-10 6-14 0-24" stroke="#bfb29b" stroke-width="3" fill="none" stroke-linecap="round"/>
+            </g>
+          </svg>
+          <figcaption class="hand-note">notes from a writer in progress</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about" aria-labelledby="about-h">
+      <div class="wrap about-grid">
+        <div>
+          <h2 id="about-h">About me</h2>
+          <p>I'm a 2025 Computer Science Engineering graduate building my career in copywriting and content writing. My interest in writing comes from observing everyday experiences, understanding emotions, and finding meaningful ways to express them.</p>
+          <p>I enjoy writing personal reflections, poetry, advertising concepts, brand copy, and short scripts. I approach writing with curiosity, research, attention to detail, and an interest in understanding what makes an audience connect with a message.</p>
+          <p>My technical background has helped me develop a structured, research-driven approach to learning and communication. I'm looking for opportunities to grow as a copywriter and content writer while creating work that feels thoughtful, engaging, and human.</p>
+        </div>
+        <blockquote class="pull-quote">
+          <p>Good writing doesn't just deliver a message. It gives someone a reason to care.</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- SELECTED WORK -->
+    <section class="section section-tint" id="work" aria-labelledby="work-h">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="work-h">Selected work</h2>
+          <p class="section-sub">Each project opens in full on this page, with the original brief where there was one. Advertising and brand pieces are speculative exercises and are labelled that way.</p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filter writing by category" id="filters"></div>
+        <p class="sr-only" id="filter-status" role="status" aria-live="polite"></p>
+
+        <div class="cards" id="featured-grid"></div>
+        <p class="empty" id="empty" hidden>These pieces are in the Personal writing section below.</p>
+      </div>
+    </section>
+
+    <!-- PERSONAL WRITING -->
+    <section class="section personal" id="personal" aria-labelledby="personal-h">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="personal-h">Personal writing</h2>
+          <p class="section-sub">The quieter side of my writing: memory, anxiety, growing up, and short poems.</p>
+        </div>
+        <div class="cards cards-personal" id="personal-grid"></div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section" id="process" aria-labelledby="process-h">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="process-h">How I approach writing</h2>
+        </div>
+        <ol class="steps">
+          <li><h3>Observe</h3><p>Find the human insight behind an idea.</p></li>
+          <li><h3>Research</h3><p>Understand the topic, audience, and context.</p></li>
+          <li><h3>Create</h3><p>Turn the idea into clear, engaging writing.</p></li>
+          <li><h3>Refine</h3><p>Improve clarity, tone, grammar, rhythm, and purpose.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section-tint" id="skills" aria-labelledby="skills-h">
+      <div class="wrap">
+        <div class="section-head"><h2 id="skills-h">Writing skills</h2></div>
+        <ul class="chips">
+          <li>Copywriting</li>
+          <li>Creative Writing</li>
+          <li>Blog &amp; Article Writing</li>
+          <li>Social Media Content</li>
+          <li>Content Research</li>
+          <li>Editing &amp; Proofreading</li>
+          <li>Scriptwriting</li>
+          <li>Content Structuring</li>
+          <li>SEO Basics</li>
+          <li>Brand Storytelling</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS -->
+    <section class="section" id="education" aria-labelledby="edu-h">
+      <div class="wrap two-col">
+        <div>
+          <h2 id="edu-h">Education &amp; certifications</h2>
+          <div class="plain-card">
+            <h3>B.E. Computer Science and Engineering</h3>
+            <p class="meta">Sri Venkateshwara Engineering College</p>
+            <p class="meta">2025 | CGPA: 8.5</p>
+            <p class="note">My technical education developed my research-oriented thinking and structured approach to problem-solving.</p>
+            <h3 class="sub">Training and certification</h3>
+            <ul>
+              <li>NPTEL: Java Programming.</li>
+              <li>SBS/SPS Technology: 15-day training, including a MySQL-based Restaurant Application.</li>
+            </ul>
+            <h3 class="sub">Technical skills</h3>
+            <p class="meta">HTML, CSS, SQL, Python</p>
+          </div>
+        </div>
+        <div id="background">
+          <h2>Academic project</h2>
+          <div class="plain-card">
+            <h3>Twitter Spam Detection Using Natural Language Processing</h3>
+            <ul>
+              <li>Studied NLP techniques for classifying spam content in Twitter data.</li>
+              <li>Analysed text patterns and model outcomes.</li>
+              <li>Organised technical findings into structured documentation.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact" aria-labelledby="contact-h">
+      <div class="wrap contact-grid">
+        <div>
+          <h2 id="contact-h">Have an idea worth writing about?</h2>
+          <p class="lead-sm">I'm open to junior copywriting and content writing opportunities, creative collaborations, and projects that value thoughtful communication.</p>
+          <a class="btn btn-primary" href="mailto:anudharshinimohanraj40@gmail.com">Email me</a>
+        </div>
+        <dl class="contact-list">
+          <div><dt>Phone</dt><dd><a href="tel:+919345816374">9345816374</a></dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:anudharshinimohanraj40@gmail.com">anudharshinimohanraj40@gmail.com</a></dd></div>
+          <div><dt>Location</dt><dd>Erode, Tamil Nadu, India</dd></div>
+          <div><dt>Medium</dt><dd><a href="https://medium.com/@dharshwrites_38688" target="_blank" rel="noopener">medium.com/@dharshwrites_38688</a></dd></div>
+          <div><dt>Instagram</dt><dd><a href="https://tinyurl.com/yuknsp4x" target="_blank" rel="noopener">tinyurl.com/yuknsp4x</a></dd></div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span id="year">2025</span> Anudharshini M. All writing is original work. Brand names appear only in speculative practice exercises and are not endorsements.</p>
+    </div>
+  </footer>
+
+  <!-- Reading dialog (project detail) -->
+  <dialog id="viewer" aria-labelledby="viewer-title">
+    <div class="viewer-bar">
+      <button class="viewer-close" type="button" id="viewer-close">Close</button>
+    </div>
+    <article class="viewer-body" id="viewer-body"></article>
+  </dialog>
+
+  <script>
+/* ==========================================================================
+   PORTFOLIO DATA  -  the only file you need to edit to add or change work.
+
+   HOW TO ADD A NEW WRITING SAMPLE
+   1. Copy one of the objects inside "projects" below.
+   2. Give it a unique "id" (lowercase letters and hyphens, no spaces).
+   3. Pick a "group" so the filter buttons work:
+        personal | poetry | advertising | brand | sales | script
+   4. Pick a "type" (this decides how the sample is displayed):
+        essay       -> paragraphs of text            (use "paragraphs")
+        verse       -> short lines, pitch/poem style  (use "stanzas")
+        brandcards  -> several brand mini-cards       (use "cards")
+        storyboard  -> scene-by-scene script          (use "scenes")
+        adcopy      -> headline / body / CTA slots    (use "slots")
+        email       -> subject line + email sections  (use "slots")
+        reflective  -> personal writing: text and/or link
+   5. "collection" is "featured" (Selected Work) or "personal" (Personal Writing).
+   6. "brief" (optional) shows the original task above your writing.
+   7. "motif" (optional) is the short typographic line on the card's top strip.
+
+   LEFT A FIELD EMPTY ("")?
+   - Empty text slots show a clear "being added" box on the page.
+   - Empty links are hidden. Never paste a link you are not sure of.
+   ========================================================================== */
+
+const PORTFOLIO = {
+  links: {
+    email: "anudharshinimohanraj40@gmail.com",
+    phone: "9345816374",
+    phoneInternational: "+919345816374",
+    portfolio: "https://l1nq.com/s55qthl",
+    medium: "https://medium.com/@dharshwrites_38688",
+    instagram: "https://tinyurl.com/yuknsp4x",
+    github: "https://github.com/AnudharshiniMohanraj/Writing-Portfolio"
+  },
+
+  /* Filter buttons. "key" must match a project's "group". */
+  filters: [
+    { key: "all", label: "All Work" },
+    { key: "personal", label: "Personal & Reflective Writing" },
+    { key: "poetry", label: "Poetry & Quotes" },
+    { key: "advertising", label: "Advertising & Campaign Analysis" },
+    { key: "brand", label: "Brand Copywriting" },
+    { key: "sales", label: "Sales Copy" },
+    { key: "script", label: "Scriptwriting" }
+  ],
+
+
+  projects: [
+    /* ------------------------------------------------------ Project A */
+    {
+      id: "arokya-milk",
+      collection: "featured",
+      group: "advertising",
+      type: "essay",
+      tone: "sand",
+      motif: "Motha Paalu kannukutty Ku than",
+      title: "The Power of Storytelling: Arokya Milk Advertisement",
+      category: "Advertising Campaign Analysis",
+      description:
+        "An analysis of how relatable characters, cultural familiarity, memorable dialogue, and social media sharing helped an advertisement connect with its audience.",
+      brief: "Describe a memorable advertising campaign and explain why it resonated with its audience.",
+      responseLabel: "My analysis",
+      paragraphs: [
+        "A memorable advertising campaign that significantly resonated with me is the Arokya brand milk advertisement. It stayed with me over time because of its storytelling. They didn’t just sell the product; they connected with an audience through the dialogue and characters they created.",
+        "The advertisement shows a small, green village, a happy family, and cows, creating a warm and familiar atmosphere. This made audiences relate to it by saying things like ‘This is how my village is’ or ‘This is the kind of life I would want for my future family.’",
+        "The dialogue ‘Motha Paalu kannukutty Ku than’ stood out to me, and the dialogue also became widely shared on social media.",
+        "I believe the campaign was successful because it went beyond the advertisement. Meme creators used its audio and video clips to share their own emotions and experiences, which helped the campaign spread across social media.",
+        "For me, this is what made the campaign memorable. It showed how good storytelling and relatable characters can connect with the audience and have the power to move beyond being just an advertisement into something people share, talk about, and remember."
+      ],
+      speculativeLabel: "My analysis of an existing campaign. Not commissioned by the brand."
+    },
+
+    /* ------------------------------------------------------ Project B */
+    {
+      id: "pencil-pitch",
+      collection: "featured",
+      group: "sales",
+      type: "verse",
+      tone: "charcoal",
+      motif: "emergency object",
+      title: "The Pencil You Didn't Know You Needed",
+      category: "Creative Sales Copy",
+      description:
+        "A playful sales pitch that turns an ordinary pencil into an everyday emergency object for catching ideas that arrive at the wrong moment.",
+      brief: "Sell a pencil to someone who doesn't need one, in approximately 100 words.",
+      responseLabel: "My pitch",
+      highlight: "that emergency object that hangs in your pocket",
+      ornament: "pencil",
+      stanzas: [
+        ["You probably don’t need a pencil,"],
+        ["But our day-to-day life is filled with ideas, to-do lists, and random thoughts that strike us in the middle of our chores rather than when we sit down to write."],
+        ["So, to write them down, we need something that stays close."],
+        ["This pencil will be that emergency object that hangs in your pocket, waiting for your hand to reach for it. And once you do, it will follow the rhythm of your hand in an effortless way."],
+        ["I know you don’t want a pencil, but what if one day you need one?"],
+        ["If it’s already hanging in your pocket, then why bother borrowing one?"]
+      ]
+    },
+
+    /* ------------------------------------------------------ Project C */
+    {
+      id: "mothers-day",
+      collection: "featured",
+      group: "brand",
+      type: "brandcards",
+      tone: "terracotta",
+      motif: "Three brands. Three voices.",
+      title: "Three Brands, Three Ways to Celebrate Mom",
+      category: "Brand Copywriting",
+      description:
+        "Mother’s Day greetings written to reflect the distinct voices of Maggi, Pizza Hut, and Tiffany & Co.",
+      brief: "Write Mother's Day greetings for Maggi, Pizza Hut, and Tiffany & Co., reflecting each brand's voice.",
+      responseLabel: "My three concepts",
+      speculativeLabel: "Speculative student copywriting exercise. Not official campaigns or client work.",
+      cards: [
+        { brand: "Maggi", style: "maggi", lines: ["It’s Mother’s Day,", "Let Mom rest while we do the rest,", "Do your 2-minute MAGGI magic.", "Share bites, laughs and stories."] },
+        { brand: "Pizza Hut", style: "pizza", lines: ["The one who brought you into the world", "Deserves a pizza today.", "Half for each?", "Mother’s Day with Pizza Hut."] },
+        { brand: "Tiffany & Co.", style: "tiffany", lines: ["Got a mom who is a gem?", "Then she deserves a gem too.", "Hers is waiting at Tiffany & Co.", "Come find it."] }
+      ]
+    },
+
+    /* ------------------------------------------------------ Project D */
+    {
+      id: "snappy-crackers",
+      collection: "featured",
+      group: "script",
+      type: "storyboard",
+      tone: "charcoal",
+      motif: "Spicy. Cheesy. 30 seconds.",
+      title: "Snappy Crackers: Spicy and Cheesy",
+      category: "TV Commercial Scriptwriting",
+      description:
+        "A fun, bold 30-second TV commercial concept for an imaginary spicy and cheesy cracker brand aimed at young adults.",
+      brief: "A fun, creative 30-second television commercial for an imaginary snack brand launching spicy and cheesy crackers for young adults aged 18–30.",
+      brandNote: "Brand: Snappy Crackers, an imaginary snack brand.",
+      responseLabel: "My script",
+      speculativeLabel: "Original speculative concept for an imaginary brand",
+      timingNote: "Scene timings: 4 + 3 + 2 + 5 + 3 + 4 + 3 + 6 = 30 seconds. The dialogue and actions follow your script.",
+      /* beat types: "action" (what we see) or "line" (spoken dialogue) */
+      scenes: [
+        { title: "Scene 1", seconds: 4, beats: [
+          { type: "line", who: "Girl 1", text: "Should we watch a movie?" },
+          { type: "line", who: "Girl 2", text: "Then we need something spicy and… cheesy" } ] },
+        { title: "Scene 2", seconds: 3, beats: [
+          { type: "action", text: "Girl 1 raises one eyebrow and smirks. She starts searching through a stack of CDs." } ] },
+        { title: "Scene 3", seconds: 2, beats: [
+          { type: "line", who: "Girl 1", text: "Hmm… any recommendation?" },
+          { type: "action", text: "Girl 2 stops her friend with her left hand and gives her a knowing look." } ] },
+        { title: "Scene 4", seconds: 5, beats: [
+          { type: "action", text: "Girl 2 lifts her right hand, revealing Snappy Crackers – Spicy and Cheesy." },
+          { type: "line", who: "Girl 2", text: "I’m talking about this" },
+          { type: "action", text: "Girl 1’s gaze shifts from Girl 2 to the crackers and back to Girl 2." },
+          { type: "line", who: "Girl 1", text: "Oh" } ] },
+        { title: "Scene 5", seconds: 3, beats: [
+          { type: "action", text: "The packet is opened. They each take one." } ] },
+        { title: "Scene 6", seconds: 4, beats: [
+          { type: "action", text: "Girl 1 takes a bite; her smile slowly breaks into a grin." },
+          { type: "line", who: "Girl 1", text: "Sounds like his pickup line" } ] },
+        { title: "Scene 7", seconds: 3, beats: [
+          { type: "line", who: "Girl 2", text: "You mean… cheesy?" },
+          { type: "action", text: "Girl 1 nods, controlling her laugh as she looks at her." } ] },
+        { title: "Scene 8", seconds: 6, beats: [
+          { type: "action", text: "They both laugh and turn towards the TV." },
+          { type: "action", text: "Cut to a close-up of the Snappy Crackers Spicy and Cheesy product packaging." },
+          /* The two lines below came from your earlier brief. Delete them if the tagline is not part of your final script. */
+          { type: "action", text: "End with a bold product reveal and the tagline:" } ],
+          tagline: "Snappy Crackers — Get Your Crunch On." }
+      ]
+    },
+
+    /* ------------------------------------------------ Late Night Cravings */
+    {
+      id: "late-night-cravings",
+      collection: "featured",
+      group: "advertising",
+      type: "adcopy",
+      visual: "food",
+      tone: "charcoal",
+      motif: "after midnight",
+      title: "Late Night Cravings",
+      category: "Social Media Ad Copy",
+      description:
+        "A relatable, playful food-delivery advertising concept based on midnight cravings.",
+      speculativeLabel: "Speculative copywriting sample",
+      /* Add your original copy between the quotes. Leave "" to keep the placeholder. */
+      slots: [
+        { label: "Headline", text: "" },
+        { label: "Body copy", text: "" },
+        { label: "Call to action", text: "" }
+      ]
+    },
+
+    /* ------------------------------------------------ Festival Sale Email */
+    {
+      id: "festival-sale",
+      collection: "featured",
+      group: "sales",
+      type: "email",
+      tone: "terracotta",
+      motif: "festive sale",
+      title: "Festival Sale Announcement",
+      category: "Email Copy",
+      description:
+        "A festive promotional email concept designed to create excitement around a seasonal sale.",
+      speculativeLabel: "Speculative email concept",
+      subject: "Your festival season is here, so is our festive sale",
+      slots: [
+        { label: "Greeting", text: "" },
+        { label: "Email body", text: "" },
+        { label: "Offer details", text: "" },
+        { label: "Call to action", text: "" }
+      ]
+    },
+
+    /* ------------------------------------------------ Personal writing */
+    /* "title" is editable. Paste the full piece into "originalText" and the
+       exact URL into "link". If "link" is empty, the profile link is used. */
+    {
+      id: "anxiety",
+      collection: "personal",
+      group: "personal",
+      type: "reflective",
+      title: "How Do I Talk About the Anxiety That Ate Me Alive?",
+      category: "Personal & Reflective Writing",
+      description: "An honest reflection on the anxiety that quietly takes over our thoughts, the feelings we struggle to explain, and the invisible battles we fight while trying to appear okay.",
+      originalText: "",
+      link: "",
+      fallbackLink: "medium",
+      fallbackLabel: "Read my writing on Medium"
+    },
+    {
+      id: "dear-dad",
+      collection: "personal",
+      group: "personal",
+      type: "reflective",
+      title: "Dear Dad, I Wish You Loved Me Less",
+      category: "Personal & Reflective Writing",
+      description: "A deeply personal letter about grief, a daughter’s longing for her father, and the complicated ache of missing someone whose love continues to live on even after they are gone.",
+      originalText: "",
+      link: "",
+      fallbackLink: "medium",
+      fallbackLabel: "Read my writing on Medium"
+    },
+    {
+      id: "every-time-i-write",
+      collection: "personal",
+      group: "personal",
+      type: "reflective",
+      title: "Every Time I Write, She Dies",
+      category: "Personal & Reflective Writing",
+      description: "A reflective piece about writing, vulnerability, and the version of ourselves we leave behind each time we put our feelings into words. Sometimes, writing is not just about expressing pain; it is about letting an old version of ourselves go.",
+      originalText: "",
+      link: "",
+      fallbackLink: "medium",
+      fallbackLabel: "Read my writing on Medium"
+    },
+    {
+      id: "poetry-quotes",
+      collection: "personal",
+      group: "poetry",
+      type: "reflective",
+      title: "Poetry and Prose",
+      category: "Poetry & Quotes",
+      description: "A collection of poems, personal thoughts, and fragments of feelings that are sometimes too difficult to explain in ordinary words. Little pieces of life, love, sadness, and everything in between.",
+      originalText: "",
+      link: "",
+      fallbackLink: "instagram",
+      fallbackLabel: "See them on Instagram"
+    }
+  ]
+};
+
+</script>
+  <script>
+/* ==========================================================================
+   app.js  -  builds the page from js/data.js.
+   You normally do NOT need to edit this file. Add work in data.js instead.
+
+   Reusable "components" (small functions that return HTML elements):
+     el()              tiny helper to create elements safely
+     FilterButton()    one category button
+     ProjectCard()     one card in the grid
+     renderViewer()    picks the right detail view for a project's "type"
+   ========================================================================== */
+
+(function () {
+  "use strict";
+
+  var DATA = PORTFOLIO; /* defined in js/data.js */
+  var currentFilter = "all";
+  var lastTrigger = null;
+
+  /* ---------- helpers ---------- */
+  function el(tag, attrs, children) {
+    var node = document.createElement(tag);
+    Object.keys(attrs || {}).forEach(function (k) {
+      if (k === "class") node.className = attrs[k];
+      else if (k === "text") node.textContent = attrs[k];
+      else node.setAttribute(k, attrs[k]);
+    });
+    (children || []).forEach(function (c) {
+      if (c) node.appendChild(c);
+    });
+    return node;
+  }
+
+  function lineBreaks(lines) {
+    var frag = document.createDocumentFragment();
+    lines.forEach(function (line, i) {
+      frag.appendChild(document.createTextNode(line));
+      if (i < lines.length - 1) frag.appendChild(document.createElement("br"));
+    });
+    return frag;
+  }
+
+  function label(text) {
+    return el("p", { class: "tag-speculative", text: text });
+  }
+
+  function externalLink(href, text, cls) {
+    return el("a", { class: cls || "btn btn-primary", href: href, target: "_blank", rel: "noopener", text: text });
+  }
+
+  /* ---------- components ---------- */
+  function FilterButton(f) {
+    var b = el("button", { type: "button", class: "filter", "data-filter": f.key, "aria-pressed": f.key === currentFilter ? "true" : "false", text: f.label });
+    b.addEventListener("click", function () {
+      currentFilter = f.key;
+      renderAll();
+    });
+    return b;
+  }
+
+  function ProjectCard(p) {
+    var li = el("article", { class: "card card-" + p.type + (p.tone ? " tone-" + p.tone : "") });
+    if (p.motif) li.appendChild(el("p", { class: "card-motif", "aria-hidden": "true", text: p.motif }));
+    li.appendChild(el("p", { class: "card-cat", text: p.category }));
+    li.appendChild(el("h3", { text: p.title }));
+    if (p.speculativeLabel) li.appendChild(label(p.speculativeLabel));
+    if (p.description) li.appendChild(el("p", { class: "card-desc", text: p.description }));
+    var btn = el("button", { type: "button", class: "btn btn-card", text: "Read Sample" });
+    btn.setAttribute("aria-label", "Read sample: " + p.title);
+    btn.addEventListener("click", function () {
+      openViewer(p, btn);
+    });
+    li.appendChild(btn);
+    return li;
+  }
+
+  /* ---------- detail views, one per project "type" ---------- */
+  function viewEssay(p) {
+    return el("div", { class: "prose" }, p.paragraphs.map(function (t) { return el("p", { text: t }); }));
+  }
+
+  function viewVerse(p) {
+    return el("div", { class: "prose prose-verse" }, p.stanzas.map(function (s) {
+      var para = el("p");
+      para.appendChild(lineBreaks(s));
+      return para;
+    }));
+  }
+
+  function viewBrandCards(p) {
+    var wrap = el("div", { class: "brand-cards" });
+    p.cards.forEach(function (c) {
+      var card = el("section", { class: "brand-card brand-" + c.style });
+      card.appendChild(el("h3", { text: c.brand }));
+      var q = el("p", { class: "brand-lines" });
+      q.appendChild(lineBreaks(c.lines));
+      card.appendChild(q);
+      wrap.appendChild(card);
+    });
+    return wrap;
+  }
+
+  function viewStoryboard(p) {
+    var wrap = el("div");
+    var list = el("ol", { class: "storyboard" });
+    var total = 0;
+    p.scenes.forEach(function (s, i) {
+      total += s.seconds;
+      var item = el("li", { class: "scene" + (s.tagline ? " scene-final" : "") });
+      var head = el("div", { class: "scene-head" }, [
+        el("span", { class: "scene-num", text: "Scene " + (i + 1) }),
+        el("span", { class: "scene-time", text: s.seconds + " seconds" })
+      ]);
+      item.appendChild(head);
+      if (s.title && s.title !== "Scene " + (i + 1)) item.appendChild(el("h3", { text: s.title }));
+      s.beats.forEach(function (b) {
+        if (b.type === "line") {
+          var d = el("p", { class: "beat-line" });
+          d.appendChild(el("span", { class: "who", text: b.who + ": " }));
+          d.appendChild(document.createTextNode("\u201C" + b.text + "\u201D"));
+          item.appendChild(d);
+        } else {
+          item.appendChild(el("p", { class: "beat-action", text: b.text }));
+        }
+      });
+      if (s.tagline) item.appendChild(el("p", { class: "tagline", text: "\u201C" + s.tagline + "\u201D" }));
+      list.appendChild(item);
+    });
+    wrap.appendChild(list);
+    wrap.appendChild(el("p", { class: "timing-note", text: p.timingNote || "Total running time: " + total + " seconds." }));
+    return wrap;
+  }
+
+  function slotsView(p, extra) {
+    var wrap = el("div", { class: "slots" });
+    if (extra) wrap.appendChild(extra);
+    p.slots.forEach(function (s) {
+      var box = el("section", { class: "slot" + (s.text ? "" : " slot-empty") });
+      box.appendChild(el("h3", { text: s.label }));
+      if (s.text) {
+        box.appendChild(el("p", { text: s.text }));
+      } else {
+        box.appendChild(el("p", { class: "slot-hint", text: "Original copy for this part is being added." }));
+      }
+      wrap.appendChild(box);
+    });
+    return wrap;
+  }
+
+  function foodVisual() {
+    var wrap = el("div", { class: "food-visual" });
+    wrap.innerHTML =
+      '<svg viewBox="0 0 320 170" role="img" aria-label="Illustration of a moon over a bowl of noodles with chopsticks">' +
+      '<circle cx="250" cy="48" r="26" fill="#f1e2c0"/><circle cx="262" cy="42" r="22" fill="#2b2b2b"/>' +
+      '<circle cx="60" cy="30" r="2" fill="#f1e2c0"/><circle cx="120" cy="20" r="1.6" fill="#f1e2c0"/><circle cx="190" cy="36" r="2" fill="#f1e2c0"/><circle cx="30" cy="70" r="1.6" fill="#f1e2c0"/>' +
+      '<path d="M90 100h140a70 56 0 0 1-140 0z" fill="#a44e31"/>' +
+      '<path d="M104 100c8-14 18-14 26 0s18 14 26 0 18-14 26 0 18 14 26 0" stroke="#f1e2c0" stroke-width="5" fill="none" stroke-linecap="round"/>' +
+      '<path d="M130 94l70-60M144 98l70-60" stroke="#e9dfce" stroke-width="4" stroke-linecap="round"/>' +
+      '<path d="M120 80c-5-9 5-12 0-20M160 76c-5-9 5-12 0-20" stroke="#bfb29b" stroke-width="3" fill="none" stroke-linecap="round"/>' +
+      "</svg>";
+    return wrap;
+  }
+
+  function viewAdCopy(p) {
+    return slotsView(p, p.visual === "food" ? foodVisual() : null);
+  }
+
+  function viewEmail(p) {
+    var subj = el("div", { class: "email-subject" }, [
+      el("span", { class: "who", text: "Subject line" }),
+      el("p", { text: p.subject })
+    ]);
+    return slotsView(p, subj);
+  }
+
+  function viewReflective(p) {
+    var wrap = el("div");
+    if (p.originalText && p.originalText.trim()) {
+      var prose = el("div", { class: "prose" });
+      p.originalText.split(/\n\s*\n/).forEach(function (para) {
+        var node = el("p");
+        node.appendChild(lineBreaks(para.split("\n")));
+        prose.appendChild(node);
+      });
+      wrap.appendChild(prose);
+    } else {
+      wrap.appendChild(el("p", { class: "slot-hint", text: "The full text is not shown on this page yet. You can read this piece at the link below." }));
+    }
+    var href = p.link || DATA.links[p.fallbackLink] || "";
+    var text = p.link ? "Read the full piece" : (p.fallbackLabel || "Visit my profile");
+    if (href) wrap.appendChild(el("div", { class: "btn-row" }, [externalLink(href, text)]));
+    return wrap;
+  }
+
+  var VIEWS = {
+    essay: viewEssay,
+    verse: viewVerse,
+    brandcards: viewBrandCards,
+    storyboard: viewStoryboard,
+    adcopy: viewAdCopy,
+    email: viewEmail,
+    reflective: viewReflective
+  };
+
+  function renderViewer(p) {
+    var body = document.getElementById("viewer-body");
+    body.textContent = "";
+    body.appendChild(el("p", { class: "card-cat", text: p.category }));
+    body.appendChild(el("h2", { id: "viewer-title", text: p.title }));
+    if (p.speculativeLabel) body.appendChild(label(p.speculativeLabel));
+    if (p.type === "reflective") body.classList.add("viewer-quiet");
+    else body.classList.remove("viewer-quiet");
+
+    if (p.type === "reflective") {
+      if (p.description) body.appendChild(el("p", { class: "viewer-desc", text: p.description }));
+    }
+    if (p.brief) {
+      var brief = el("section", { class: "brief" }, [
+        el("h3", { text: "The brief" }),
+        el("p", { text: p.brief })
+      ]);
+      if (p.brandNote) brief.appendChild(el("p", { class: "brief-note", text: p.brandNote }));
+      body.appendChild(brief);
+    }
+    if (p.ornament === "pencil") {
+      var orn = el("div", { class: "ornament", "aria-hidden": "true" });
+      orn.innerHTML = '<svg viewBox="0 0 420 70"><g transform="rotate(-6 210 35)"><rect x="40" y="22" width="300" height="26" rx="3" fill="#c9885f"/><rect x="40" y="22" width="300" height="8" fill="#a44e31" opacity=".35"/><rect x="332" y="22" width="34" height="26" rx="3" fill="#2b2b2b"/><path d="M40 22L6 35l34 13z" fill="#ecd9b8"/><path d="M6 35l12-4.5v9z" fill="#2b2b2b"/></g></svg>';
+      body.appendChild(orn);
+    }
+    if (p.highlight) {
+      body.appendChild(el("p", { class: "highlight", text: "\u2026" + p.highlight + "\u2026" }));
+    }
+    if (p.responseLabel) body.appendChild(el("h3", { class: "response-label", text: p.responseLabel }));
+    body.appendChild((VIEWS[p.type] || viewEssay)(p));
+    if (p.footnote) body.appendChild(el("p", { class: "footnote", text: p.footnote }));
+  }
+
+  /* ---------- dialog ---------- */
+  var dialog = document.getElementById("viewer");
+
+  function openViewer(p, trigger) {
+    lastTrigger = trigger;
+    renderViewer(p);
+    document.getElementById("viewer-body").scrollTop = 0;
+    if (typeof dialog.showModal === "function") dialog.showModal();
+    else dialog.setAttribute("open", "");
+    document.body.classList.add("no-scroll");
+    try { history.replaceState(null, "", "#" + p.id); } catch (e) {}
+  }
+
+  function closeViewer() {
+    if (typeof dialog.close === "function") dialog.close();
+    else dialog.removeAttribute("open");
+  }
+
+  dialog.addEventListener("close", function () {
+    document.body.classList.remove("no-scroll");
+    try { if (location.hash && findProject(location.hash.slice(1))) history.replaceState(null, "", "#work"); } catch (e) {}
+    if (lastTrigger) lastTrigger.focus();
+  });
+  document.getElementById("viewer-close").addEventListener("click", closeViewer);
+  dialog.addEventListener("click", function (e) {
+    if (e.target === dialog) closeViewer(); /* click on backdrop */
+  });
+
+  function findProject(id) {
+    return DATA.projects.filter(function (p) { return p.id === id; })[0];
+  }
+
+  /* ---------- render ---------- */
+  function matches(p) {
+    return currentFilter === "all" || p.group === currentFilter;
+  }
+
+  function fill(containerId, collection) {
+    var box = document.getElementById(containerId);
+    box.textContent = "";
+    var items = DATA.projects.filter(function (p) { return p.collection === collection && matches(p); });
+    items.forEach(function (p) { box.appendChild(ProjectCard(p)); });
+    return items.length;
+  }
+
+  function renderAll() {
+    var filters = document.getElementById("filters");
+    filters.textContent = "";
+    DATA.filters.forEach(function (f) { filters.appendChild(FilterButton(f)); });
+
+    var nFeatured = fill("featured-grid", "featured");
+    var nPersonal = fill("personal-grid", "personal");
+    document.getElementById("featured-grid").hidden = nFeatured === 0;
+    document.getElementById("personal").hidden = nPersonal === 0;
+    document.getElementById("empty").hidden = nFeatured !== 0;
+
+    var active = DATA.filters.filter(function (f) { return f.key === currentFilter; })[0];
+    document.getElementById("filter-status").textContent =
+      "Showing " + (nFeatured + nPersonal) + " piece" + (nFeatured + nPersonal === 1 ? "" : "s") + " in " + active.label + ".";
+  }
+
+  /* ---------- mobile nav ---------- */
+  var toggle = document.querySelector(".nav-toggle");
+  var nav = document.getElementById("site-nav");
+  toggle.addEventListener("click", function () {
+    var open = nav.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", String(open));
+  });
+  nav.addEventListener("click", function (e) {
+    if (e.target.tagName === "A") {
+      nav.classList.remove("open");
+      toggle.setAttribute("aria-expanded", "false");
+    }
+  });
+
+  /* ---------- start ---------- */
+  document.getElementById("year").textContent = new Date().getFullYear();
+  renderAll();
+
+  /* Open a piece directly from a link like index.html#arokya-milk */
+  if (location.hash) {
+    var p = findProject(location.hash.slice(1));
+    if (p) openViewer(p, document.querySelector("#work h2"));
+  }
+})();
+
+</script>
+</body>
+</html>
